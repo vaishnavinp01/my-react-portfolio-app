@@ -1,0 +1,146 @@
+.project {
+  height: 100vh;
+  padding: 4rem 1% 2rem;
+}
+.project-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.project-heading {
+  text-align: center;
+  font-size: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.project-heading.light-mode{
+  color: hsl(0, 0%, 40%);
+}
+.project-heading.dark-mode{
+  color: hsl(0, 0%, 100%);
+}
+.project-row {
+  margin-top: 50px;
+}
+.project-flip {
+  height: 339px;
+  perspective: 1000;
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+}
+.project-flip:hover .project-flipper {
+  transform: rotateY(180deg);
+}
+.project-flip .project-flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.project-flip .project-front-card,
+.project-flip .project-back-card {
+  height: 335px;
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project-flip .project-front-card {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.project-flip .project-front-card img {
+  height: 260px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px;
+  margin: 0 auto;
+}
+.project-flip .project-front-card .project-front-name {
+  text-align: center;
+  margin: 25px;
+  font-size: 110%;
+  font-weight: 600;
+}
+.project-flip .project-back-card {
+  padding: 0 20px;
+  display: table;
+  background: #9c89b8;
+  text-align: center;
+  color: #fff;
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  z-index: 5;
+  border-radius: 10px;
+}
+.project-flip .project-back-card .project-info {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+.project-flip .project-back-card .project-back-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-flip .project-back-card .project-back-language {
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+.project-flip .team-member-back .project-back-info {
+  position: relative;
+  /* margin: 60px 0 0; */
+  width: 30px;
+  font-size: 12px;
+  text-align: justify;
+}
+.project-flip .project-back-card .project-back-info::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 1px;
+  width: 30px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.project-icon {
+  margin-top: 12%;
+}
+.project-icon-small {
+  margin: 5px;
+  height: 11%;
+  width: 11%;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+.project-icon-small:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 800px) {
+  .project {
+    padding: 0rem 3% 0rem;
+  }
+  .project-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-flip {
+    height: 350px;
+  }
+}

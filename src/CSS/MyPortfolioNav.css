@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.myportfolionav-navbar {
+  background-color: #9c89b8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.myportfolionav-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+.myportfolionav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Playwrite CU", cursive;
+}
+.myportfolionav-nav .nav-link .myportfolionav-link {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-family: "Arsenal SC", sans-serif;
+  text-decoration: none;
+  font-size: larger;
+  transition: all 0.3s ease-in-out;
+}
+.myportfolionav-nav .nav-link .myportfolionav-link:hover {
+  color: gold !important;
+  border-bottom: 2px solid gold;
+}
+.myportfolionav-nav .nav-link .myportfolionav-link.active {
+  font-weight: bold;
+  color: gold !important;
+  border-bottom: 2px solid gold;
+}

@@ -1,0 +1,81 @@
+.experience {
+  height: 100vh;
+  padding: 5rem 7% 2rem;
+}
+.experience-heading {
+  font-size: 30px;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.experience-heading.light-mode {
+  color: hsl(0, 0%, 40%);
+}
+.experience-heading.dark-mode {
+  color: hsl(0, 0%, 100%);
+}
+.experience-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.experience-container .experience-box {
+  padding: 1rem 2rem 0rem;
+  border-radius: 6px;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 510px;
+  height: 440px;
+  transition: 0.5s ease;
+}
+.experience-container .experience-box.light-mode{
+  background: #fdfdfd;
+  border-top: 5px solid #9c89b8;
+  border-bottom: 5px solid #9c89b8;
+}
+.experience-container .experience-box.dark-mode{
+  background: #9c89b8;
+  border-top: 5px solid #fdfdfd;
+  border-bottom: 5px solid #fdfdfd;
+}
+.experience-container .experience-box:hover {
+  transform: scale(1.02);
+}
+.experience-container .experience-box:hover.light-mode{
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+.experience-container .experience-box:hover.dark-mode{
+  box-shadow: 0 0.1rem 0.5rem rgba(241, 241, 241, 0.2);
+}
+.experience-container .experience-box img {
+  width: 200px;
+  height: 150px;
+}
+.experience-box h3 {
+  transition: 0.5s ease;
+}
+.experience-box p {
+  width: 300px;
+  display: flex;
+  margin-left: 70px;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .experience {
+    height: 100vh;
+    padding: 4rem 4% 2rem;
+  }
+  .experience-heading {
+    margin-bottom: 15px;
+  }
+  .experience-container .experience-box {
+    width: 380px;
+  }
+  .experience-box p {
+    margin-left: 10px;
+  }
+}

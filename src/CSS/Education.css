@@ -1,0 +1,37 @@
+.education {
+  min-height: 100vh;
+  padding: 7rem 7% 2rem;
+  text-align: center;
+}
+.education-subtitle {
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: block;
+}
+.swiper-wrapper {
+  margin-bottom: 10px;
+}
+.education-card {
+  background-color: rgb(142, 106, 176);
+  padding: 30px 35px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.education-card h5 {
+  min-height: 35px;
+  margin-bottom: 15px;
+}
+.swiper-pagination > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  display: inline-block;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .education {
+  }
+  .swiper-horizontal > .swiper-pagination-bullets {
+    margin-left: 15px;
+  }
+}
