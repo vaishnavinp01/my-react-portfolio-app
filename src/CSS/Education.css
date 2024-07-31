@@ -37,6 +37,10 @@
   position: relative;
 }
 @media (max-width: 768px) {
+  .education {
+    height: 100vh;
+    padding: 10rem 7% 2rem;
+  }
   .swiper-horizontal > .swiper-pagination-bullets {
     margin-left: 15px;
   }

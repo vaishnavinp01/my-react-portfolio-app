@@ -6,6 +6,7 @@ import Project from "../Components/Project";
 import Skill from "../Components/Skill";
 import Education from "../Components/Education";
 import Contact from "../Components/Contact";
+import MyPortFooter from "../Components/MyPortFooter";
 const MainLayout = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const MainLayout = () => {
         <section id="Skill"> <Skill /> </section>
         <section id="Education"> <Education /> </section>
         <section id="Contact"> <Contact /> </section>
+        <section id="Footer"> <MyPortFooter /> </section>
       </div>
     </div>
   );

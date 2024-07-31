@@ -37,12 +37,12 @@
   font-size: 17px;
   margin-top: 8px;
 }
-.contact-content .contact-input.light-mode{
+.contact-content .contact-input.light-mode {
   border: 2px solid #9c89b8;
   color: #333;
   background-color: #fff;
 }
-.contact-content .contact-input.dark-mode{
+.contact-content .contact-input.dark-mode {
   border: 2px solid #9c89b8;
   color: #fff;
   background-color: #333;
@@ -66,11 +66,11 @@
   transition: 0.3s ease all;
   z-index: 1;
 }
-.contact-btn.light-mode{
+.contact-btn.light-mode {
   /* box-shadow: 0 0 3px 6px rgba(0, 0, 0, 0.1); */
   color: #9c89b8;
 }
-.contact-btn.dark-mode{
+.contact-btn.dark-mode {
   /* box-shadow: 0 3px 6px rgba(163, 158, 158, 0.827); */
   color: #9c89b8;
 }
@@ -82,14 +82,16 @@
   right: 50%;
   bottom: 0;
   opacity: 0;
-  content: '';
+  content: "";
   background-color: #9c89b8;
   z-index: -1;
 }
-.contact-btn:hover, .contact-btn:focus {
+.contact-btn:hover,
+.contact-btn:focus {
   color: white;
 }
-.contact-btn:hover::before, .contact-btn:focus::before {
+.contact-btn:hover::before,
+.contact-btn:focus::before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
