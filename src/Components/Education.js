@@ -45,7 +45,7 @@ const Education = () => {
           {education.map(({ name, year, university, marks }, index) => {
             return (
               <SwiperSlide className="education-card">
-                <span className="education-subtitle">{name}</span>
+                <span className="education-name">{name}</span>
                 <h3>{year}</h3>
                 <h5>{university}</h5>
                 <h5>{marks}</h5>

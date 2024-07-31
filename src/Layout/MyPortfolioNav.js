@@ -8,13 +8,21 @@ import { MdDarkMode, MdLightMode } from "react-icons/md";
 const MyPortfolioNav = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <Navbar className={`myportfolionav-navbar ${theme}-mode`} fixed="top" expand="lg">
+    <Navbar
+      className={`myportfolionav-navbar ${theme}-mode`}
+      fixed="top"
+      expand="lg"
+    >
       <Container>
         <Navbar.Brand className="myportfolionav-brand">
           <img src={Resume} alt="Resume" />
           <span className="myportfolionav-logo">Vaishnawi</span>
-          <button style={{ background: "none", border: "none" }} onClick={toggleTheme}>
-            {theme === "light" ? (<MdDarkMode style={{ color: "black" }} />) : (<MdLightMode style={{ color: "white" }} />)}
+          <button className="myportfolionav-switch" onClick={toggleTheme}>
+            {theme === "light" ? (
+              <MdDarkMode style={{ color: "black" }} />
+            ) : (
+              <MdLightMode style={{ color: "white" }} />
+            )}
           </button>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

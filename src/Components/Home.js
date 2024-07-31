@@ -6,7 +6,7 @@ import { ThemeContext } from "./ThemeContext";
 const Home = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="home" id="Home">
+    <section className="home" id="Home">
       <div className="home-content">
         <h1>Hi, I'm Vaishnavi</h1>
         <span>
@@ -21,9 +21,9 @@ const Home = () => {
         <a href={Vaishnavi_Resume} download="Vaishnawi_Resume" target="_blank" rel="noreferrer" className={`home-btn ${theme}-mode`}>
           Download Resume
         </a>
-        <div className="home-img"></div>
+        <div className={`home-img ${theme}-mode`}></div>
       </div>
-    </div>
+    </section>
   );
 };
 

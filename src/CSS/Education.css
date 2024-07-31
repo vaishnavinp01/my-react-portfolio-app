@@ -1,10 +1,12 @@
 .education {
+  box-sizing: border-box;
   min-height: 100vh;
-  padding: 7rem 7% 2rem;
+  /* padding: 7rem 7% 2rem; */
+  padding: 5rem 7% 2rem;
   text-align: center;
 }
 .education-subtitle {
-  font-size: large;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 50px;
   display: block;
@@ -13,10 +15,16 @@
   margin-bottom: 10px;
 }
 .education-card {
-  background-color: rgb(142, 106, 176);
+  background-color: #9c89b8;
   padding: 30px 35px;
   border-radius: 18px;
   overflow: hidden;
+}
+.education-name {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: block;
 }
 .education-card h5 {
   min-height: 35px;
@@ -29,8 +37,6 @@
   position: relative;
 }
 @media (max-width: 768px) {
-  .education {
-  }
   .swiper-horizontal > .swiper-pagination-bullets {
     margin-left: 15px;
   }
