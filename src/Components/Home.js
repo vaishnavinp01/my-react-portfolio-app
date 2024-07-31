@@ -18,8 +18,8 @@ const Home = () => {
           technologies like HTML, CSS, JavaScript, ExpressJs, ReactJs, MongoDB,
           NodeJs.
         </p>
-        <a href={Vaishnavi_Resume} download="Vaishnawi_Resume" target="_blank" rel="noreferrer" className={`home-btn ${theme}-mode`}>
-          Download Resume
+        <a href={Vaishnavi_Resume} download="Vaishnawi_Resume" target="_blank" rel="noreferrer" className="home-anchor">
+          <button className={`home-btn ${theme}-mode`}>Download Resume</button>
         </a>
         <div className={`home-img ${theme}-mode`}></div>
       </div>
