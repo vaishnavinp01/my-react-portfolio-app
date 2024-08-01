@@ -21,8 +21,8 @@ const Home = () => {
         <a href={Vaishnavi_Resume} download="Vaishnawi_Resume" target="_blank" rel="noreferrer" className="home-anchor">
           <button className={`home-btn ${theme}-mode`}>Download Resume</button>
         </a>
-        <div className={`home-img ${theme}-mode`}></div>
       </div>
+      <div className={`home-img ${theme}-mode`}></div>
     </section>
   );
 };
