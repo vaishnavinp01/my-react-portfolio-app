@@ -11,12 +11,12 @@ const Experience = () => {
         <div className={`experience-box ${theme}-mode`}>
           <img src={Technoweit} alt="" />
           <h3>Full Stack Web Development</h3>
-          <p>
+          <span>
             Highly skilled MERN Stack developer bringing 6 months of experience
             in designing and developing robust web applications. Proficient in
             front-end and back-end technologies, including React.js, Node.js,
             MongoDB, and Express.js. I am successfully completed my projects.
-          </p>
+          </span>
         </div>
       </div>
     </section>

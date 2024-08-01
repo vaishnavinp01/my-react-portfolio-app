@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CU:wght@100..400&display=swap");
 .education {
   box-sizing: border-box;
   min-height: 100vh;
   /* padding: 7rem 7% 2rem; */
   padding: 5rem 7% 2rem;
   text-align: center;
+  font-family: "Recursive", sans-serif;
+  font-optical-sizing: auto;
 }
 .education-subtitle {
   font-size: 30px;
@@ -29,6 +32,7 @@
 .education-card h5 {
   min-height: 35px;
   margin-bottom: 15px;
+  font-size: larger;
 }
 .swiper-pagination > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {

@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .experience {
   box-sizing: border-box;
   height: 100vh;
   padding: 5rem 7% 2rem;
+  font-family: "Recursive", sans-serif;
+  font-optical-sizing: auto;
 }
 .experience-heading {
   font-size: 30px;
@@ -9,7 +12,6 @@
   text-align: center;
   margin-bottom: 30px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
 }
 .experience-heading.light-mode {
   color: hsl(0, 0%, 40%);
@@ -22,23 +24,23 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  /* gap: 1rem; */
 }
 .experience-container .experience-box {
-  padding: 1rem 2rem 0rem;
+  padding: 0rem 2rem 0rem;
   border-radius: 6px;
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 510px;
-  height: 445px;
+  height: 470px;
   transition: 0.5s ease;
 }
-.experience-container .experience-box.light-mode{
+.experience-container .experience-box.light-mode {
   background: #fdfdfd;
   border-top: 5px solid #9c89b8;
   border-bottom: 5px solid #9c89b8;
 }
-.experience-container .experience-box.dark-mode{
+.experience-container .experience-box.dark-mode {
   background: #9c89b8;
   border-top: 5px solid #fdfdfd;
   border-bottom: 5px solid #fdfdfd;
@@ -46,38 +48,39 @@
 .experience-container .experience-box:hover {
   transform: scale(1.02);
 }
-.experience-container .experience-box:hover.light-mode{
+.experience-container .experience-box:hover.light-mode {
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
 }
-.experience-container .experience-box:hover.dark-mode{
+.experience-container .experience-box:hover.dark-mode {
   box-shadow: 0 0.1rem 0.5rem rgba(241, 241, 241, 0.861);
 }
 .experience-container .experience-box img {
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-top: -60px;
 }
 .experience-box h3 {
   transition: 0.5s ease;
+  margin-top: -60px;
 }
 .experience-box p {
   font-size: large;
-  width: 310px;
+  width: 300px;
   display: flex;
   margin-left: 70px;
   text-align: justify;
 }
-@media (max-width: 768px) {
-  .experience {
-    height: 100vh;
-    padding: 4rem 4% 2rem;
-  }
+@media screen and (max-width: 768px) {
   .experience-heading {
     margin-bottom: 15px;
   }
   .experience-container .experience-box {
-    width: 380px;
+    width: 350px;
+    height: 470px;
   }
-  .experience-box p {
-    margin-left: 10px;
+  .experience-box h3 {
+    width: 330px;
+    font-size: larger;
   }
 }

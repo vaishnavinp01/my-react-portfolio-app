@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CU:wght@100..400&display=swap");
 .project {
   box-sizing: border-box;
   height: 100vh;
   padding: 4rem 1% 2rem;
+  font-family: "Recursive", sans-serif;
+  font-optical-sizing: auto;
 }
 .project-container {
   margin-top: 2%;
@@ -13,7 +16,6 @@
   flex-wrap: wrap;
   margin-bottom: 30px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
 }
 .project-heading.light-mode{
   color: hsl(0, 0%, 40%);

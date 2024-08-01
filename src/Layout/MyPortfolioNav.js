@@ -18,7 +18,7 @@ const MyPortfolioNav = () => {
       <Container>
         <Navbar.Brand className="myportfolionav-brand">
           <img src={Resume} alt="Resume" />
-          <span className="myportfolionav-logo">Vaishnawi</span>
+          <span className="myportfolionav-logo">Vaishnavi</span>
           <button className="myportfolionav-switch" onClick={toggleTheme}>
             {theme === "light" ? (
               <MdDarkMode style={{ color: "black" }} />
