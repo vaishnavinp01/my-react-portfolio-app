@@ -32,32 +32,15 @@ const Contact = () => {
         <h3 className="contact-heading">Contact</h3>
         <div className="contact-content">
           <label>Full Name</label>
-          <input
-            type="text"
-            className={`contact-input ${theme}-mode`}
-            placeholder="Enter Your Name"
-            name="name"
-            required
-          />
+          <input type="text" className={`contact-input ${theme}-mode`} placeholder="Enter Your Name" name="name" required />
         </div>
         <div className="contact-content">
           <label>Email Id</label>
-          <input
-            type="email"
-            className={`contact-input ${theme}-mode`}
-            placeholder="Enter Your Email"
-            name="email"
-            required
-          />
+          <input type="email" className={`contact-input ${theme}-mode`} placeholder="Enter Your Email" name="email" required />
         </div>
         <div className="contact-content">
           <label>Your Message</label>
-          <textarea
-            name="message"
-            className={`contact-input contact-textarea ${theme}-mode`}
-            placeholder="Enter Your Message"
-            required
-          />
+          <textarea name="message" className={`contact-input contact-textarea ${theme}-mode`} placeholder="Enter Your Message" required />
         </div>
         <button className={`contact-btn ${theme}-mode`}>Send Message</button>
       </form>

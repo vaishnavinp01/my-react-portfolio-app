@@ -82,5 +82,10 @@
   .experience-box h3 {
     width: 330px;
     font-size: larger;
+    margin-left: -20px;
+  }
+  .experience-box span{
+    width: 300px;
+    margin-left: -10px;
   }
 }

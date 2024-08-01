@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./Components/ThemeContext";
 import Loading from "./Components/Loading";
-// import SwiperComponent from "./Components/SwiperComponent";
-
 function App() {
   // Theme
   const { theme } = useContext(ThemeContext);
@@ -23,12 +21,7 @@ function App() {
   }, []);
   return (
     <div className={`app ${theme}-mode`}>
-      {loading ? (
-        <Loading />
-      ) : (
-      <MainLayout />
-      )}
-      {/* <SwiperComponent/> */}
+      {loading ? ( <Loading /> ) : ( <MainLayout /> )}
     </div>
   );
 }

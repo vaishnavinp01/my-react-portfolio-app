@@ -10,7 +10,7 @@ const Experience = () => {
       <div className="experience-container">
         <div className={`experience-box ${theme}-mode`}>
           <img src={Technoweit} alt="" />
-          <h3>Full Stack Web Development</h3>
+          <h3>Full Stack Web Developer</h3>
           <span>
             Highly skilled MERN Stack developer bringing 6 months of experience
             in designing and developing robust web applications. Proficient in

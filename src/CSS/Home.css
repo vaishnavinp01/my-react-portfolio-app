@@ -125,10 +125,13 @@
     width: 140%;
     text-align: justify;
   }
-  .home-btn {
+  /* .home-btn {
     bottom: 300px;
     left: 50px;
-  }
+  } */
+ .home-btn{
+  margin-bottom: 0;
+ }
   .home-img {
     margin-top: 330px;
     position: absolute;
