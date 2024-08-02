@@ -19,7 +19,7 @@
 }
 .home-btn {
   text-decoration: none;
-  transform: translate(240%,-150%);
+  transform: translate(240%, -150%);
   /* display: flex;
   justify-content: center; */
   /* position: absolute;
@@ -120,8 +120,7 @@
     text-align: justify;
   }
   .home-btn {
-    bottom: 330px;
-    left: 50px;
+    transform: translate(40%, 320%);
   }
   .home-img {
     margin-top: 250px;
