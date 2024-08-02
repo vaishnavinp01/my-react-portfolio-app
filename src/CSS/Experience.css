@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 .experience-heading.light-mode {
-  color: hsl(0, 0%, 40%);
+  color: #000000;
 }
 .experience-heading.dark-mode {
   color: hsl(0, 0%, 100%);

@@ -15,7 +15,7 @@
   font-weight: 600;
 }
 .skill-subtitle.light-mode {
-  color: hsl(0, 0%, 40%);
+  color: #000000;
 }
 .skill-subtitle.dark-mode {
   color: hsl(0, 0%, 100%);
@@ -74,7 +74,7 @@
   text-align: center;
 }
 .skill-title.light-mode {
-  color: hsl(0, 0%, 40%);
+  color: #000000;
 }
 .skill-title.dark-mode {
   color: hsl(0, 0%, 100%);

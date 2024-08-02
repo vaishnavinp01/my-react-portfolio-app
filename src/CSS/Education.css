@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 .education-name {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 50px;
   display: block;
@@ -32,7 +32,7 @@
 .education-card h5 {
   min-height: 35px;
   margin-bottom: 15px;
-  font-size: larger;
+  font-size: 17px;
 }
 .swiper-pagination > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
