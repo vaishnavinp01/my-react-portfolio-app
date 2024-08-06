@@ -94,7 +94,7 @@ const Home = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             {/* <span className="tagline">Welcome to my Portfolio</span> */}
-            <h1>
+            <h1 className="home-heading">
               {`Hi I'm Vaishnavi`}
               <span
                 className="txt-rotate"

@@ -36,14 +36,14 @@
   transition: 0.5s ease;
 }
 .experience-container .experience-box.light-mode {
-  background: #fdfdfd;
+  background: #f0e6ef;
   border-top: 5px solid #9c89b8;
   border-bottom: 5px solid #9c89b8;
 }
 .experience-container .experience-box.dark-mode {
   background: #9c89b8;
-  border-top: 5px solid #fdfdfd;
-  border-bottom: 5px solid #fdfdfd;
+  border-top: 5px solid #f0e6ef;
+  border-bottom: 5px solid #f0e6ef;
 }
 .experience-container .experience-box:hover {
   transform: scale(1.02);
@@ -84,8 +84,13 @@
     font-size: larger;
     margin-left: -20px;
   }
-  .experience-box span{
+  .experience-box span {
     width: 300px;
     margin-left: -10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .experience-heading {
+    margin-bottom: 50px;
   }
 }
