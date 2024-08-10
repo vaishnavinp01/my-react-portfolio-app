@@ -163,7 +163,9 @@
   display: block;
 }
 .txt-rotate {
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  display: flex;
+  margin-top: 20px;
 }
 .home p {
   /* color: #b8b8b8; */
