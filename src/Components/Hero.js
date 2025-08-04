@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import "../CSS/Home.css";
+import "../CSS/Hero.css";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import Vaishnawi_Pic from "../Images/Vaishnawi_Pic.png";
 import Vaishnavi_Resume from "../Images/Vaishnawi_Resume.pdf";
 import { ThemeContext } from "./ThemeContext";
 
-const Home = () => {
+const Hero = () => {
   const { theme } = useContext(ThemeContext);
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -17,6 +17,7 @@ const Home = () => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
+
     return () => {
       clearInterval(ticker);
     };
@@ -41,31 +42,41 @@ const Home = () => {
     }
   };
   return (
-    <section className="home" id="Home">
-      <div className="homepage">
+    <section className="hero" id="Home">
+      <div className="heropage">
         <div className="left-section">
-          <h1 className="home-heading">
+          <h1 className="hero-heading">
             {`Hi I'm Vaishnavi`}
-            <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer","MERN Stack Developer" ]'>
-              <span className="wrap_home">{text}</span>
+            <span
+              className="txt-rotate"
+              dataPeriod="1000"
+              data-rotate='[ "Full Stack Developer","MERN Stack Developer" ]'
+            >
+              <span className="wrap_hero">{text}</span>
             </span>
           </h1>
-          <p className="home_p">
+          <p className="hero_p">
             I am Computer Science Student. I enjoy problem-solving and coding.
             Always strive to bring 100% to the work I do. I have worked on
             technologies like HTML, CSS, JavaScript, ExpressJs, ReactJs,
             MongoDB, NodeJs.
           </p>
-          <a className={`home-btn ${theme}-mode`} href={Vaishnavi_Resume} download="Vaishnawi_Resume" target="_blank" rel="noreferrer">
+          <a
+            className={`hero-btn ${theme}-mode`}
+            href={Vaishnavi_Resume}
+            download="Vaishnawi_Resume"
+            target="_blank"
+            rel="noreferrer"
+          >
             Download Resume <ArrowRightCircle size={25} />
           </a>
         </div>
         <div className="right-section">
-          <img className="home_img" src={Vaishnawi_Pic} alt="Vaishnawi_Pic" />
+          <img className="hero_img" src={Vaishnawi_Pic} alt="Vaishnawi_Pic" />
         </div>
       </div>
     </section>
   );
 };
 
-export default Home;
+export default Hero;

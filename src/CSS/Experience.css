@@ -1,6 +1,6 @@
+/* Reset some basic elements */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .experience {
-  box-sizing: border-box;
   height: 100vh;
   padding: 5rem 7% 2rem;
   font-family: "Recursive", sans-serif;
@@ -9,88 +9,77 @@
 .experience-heading {
   font-size: 30px;
   text-align: center;
-  text-align: center;
-  margin-bottom: 30px;
   font-weight: 600;
 }
-.experience-heading.light-mode {
-  color: #000000;
-}
-.experience-heading.dark-mode {
-  color: hsl(0, 0%, 100%);
-}
-.experience-container {
+.experience-card-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /* gap: 1rem; */
+  padding: 2rem;
 }
-.experience-container .experience-box {
-  padding: 0rem 2rem 0rem;
-  border-radius: 6px;
-  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 510px;
-  height: 470px;
-  transition: 0.5s ease;
+.experience-content{
+  border-radius: 12px;
 }
-.experience-container .experience-box.light-mode {
-  background: #f0e6ef;
+.experience-content.light-mode {
+  background: #ffffff;
   border-top: 5px solid #9c89b8;
   border-bottom: 5px solid #9c89b8;
 }
-.experience-container .experience-box.dark-mode {
+.experience-content.dark-mode {
   background: #9c89b8;
   border-top: 5px solid #f0e6ef;
   border-bottom: 5px solid #f0e6ef;
 }
-.experience-container .experience-box:hover {
-  transform: scale(1.02);
-}
-.experience-container .experience-box:hover.light-mode {
-  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
-}
-.experience-container .experience-box:hover.dark-mode {
-  box-shadow: 0 0.1rem 0.5rem rgba(241, 241, 241, 0.861);
-}
-.experience-container .experience-box img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-  margin-top: -60px;
-}
-.experience-box h3 {
+.experience-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
   transition: 0.5s ease;
-  margin-top: -60px;
 }
-.experience-box span {
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+.experience-card-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 5px;
+}
+.experience-card-content {
+  padding: 1.5rem;
+}
+.experience-card-title {
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+.experiencecard-description {
   font-size: large;
-  width: 310px;
-  display: flex;
-  margin-left: 70px;
-  text-align: justify;
+  line-height: 1.6;
 }
-@media screen and (max-width: 768px) {
-  .experience-heading {
-    margin-bottom: 15px;
-  }
-  .experience-container .experience-box {
-    width: 350px;
-    height: 470px;
-  }
-  .experience-box h3 {
-    width: 330px;
-    font-size: larger;
-    margin-left: -20px;
-  }
-  .experience-box span {
-    width: 300px;
-    margin-left: -10px;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-card {
+    max-width: 90%;
   }
 }
-@media screen and (max-width: 700px) {
-  .experience-heading {
-    margin-bottom: 50px;
+@media (max-width: 768px) {
+  .experience-card-title {
+    font-size: 1.3rem;
+  }
+  .experience-card-description {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+  .experience-card-container {
+    padding: 1rem;
+  }
+  .experience-card-title {
+    font-size: 1.1rem;
+  }
+  .experience-card-description {
+    font-size: 0.9rem;
   }
 }

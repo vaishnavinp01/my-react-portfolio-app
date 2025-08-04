@@ -12,7 +12,7 @@ const MainLayout = () => {
     <div>
       <MyPortfolioNav />
       <div style={{ paddingTop: "50px" }}>
-        <section id="Home"> <Home /> </section>
+        <section id="Home"><Home /></section>
         <section id="Experience"> <Experience /> </section>
         <section id="Project"> <Project /> </section>
         <section id="Skill"> <Skill /> </section>
