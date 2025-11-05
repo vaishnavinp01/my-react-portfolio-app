@@ -9,7 +9,8 @@
   background-color: #3c3a40;
 }
 .footer.dark-mode{
-  background-color: rgb(184, 212, 211);
+  /* background-color: rgb(184, 212, 211); */
+  background: #c0acac;
 }
 .ft-1 h3 {
   font-weight: 700;
@@ -21,14 +22,14 @@
   height: 40px;
 }
 .ft-1 span {
-  color: #9c89b8;
+  color: #f8f7f9;
 }
 .ft-1 p {
   padding: 0rem 5rem 0.8rem 0;
   font-weight: 500;
 }
 .footer-content h5 {
-  color: #9c89b8;
+  color: #f8f7f9;
   font-family: "Recursive", sans-serif;
   font-optical-sizing: auto;
 }
