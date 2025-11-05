@@ -176,7 +176,10 @@
 }
 .home .home-btn {
   text-decoration: none;
-  padding: 5px;
+  /* padding: 5px; */
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   /* color: #000; */
   font-weight: 700;
   font-size: 20px;
